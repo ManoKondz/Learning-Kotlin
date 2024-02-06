@@ -6,7 +6,16 @@ fun main() {
         println("Jovem")
     } else if (idade >= 21 && idade <= 59) {
         println("Adulto")
-    } else if (idade > 60) {
+    } else {
         println("Idoso")
+    }
+    var cargo:String = "presidente"
+    when(cargo) {
+        "Presidente" -> println(6000f)
+        "Gerente" -> println(4500f)
+        "Coordenador" -> println(2500f)
+        "Analista" -> println(2000f)
+        "Estagiário" -> println(600f)
+        else -> println("Cargo não encontrado")
     }
 }
